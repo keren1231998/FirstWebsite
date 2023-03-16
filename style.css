@@ -1,0 +1,116 @@
+	body{
+		background-image: url("Images/bkg-2.png");
+
+	}
+  #menu {
+	display: flex;
+	position: fixed;
+	width: 99%;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #2e59ea;
+	padding: 10px;
+  }
+  #menu img {
+	order: -1;
+	margin-right: auto;
+  	max-height: 40px;
+  }
+ 
+  .column {
+  float: left;
+  width: 20%;
+  padding: 5px;
+}
+
+/* Clear floats after image containers */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+  #menu img {
+	max-width: 50px;
+	order: -1;
+  }
+  h1 {
+	font-size: 3vw; /* make our h1 tag larger */
+	font-family: sans-serif; /* choosing our font */
+	background: linear-gradient(to right, rgba(255, 215, 255, 0) 0%, rgba(225, 255, 255, 0.5) 20%, rgba(255, 255, 255, 0) 61%), linear-gradient(rgb(97, 183, 217) 52%, rgb(224, 246, 255) 60%, rgb(78, 99, 132) 61%); /* you can change the colors based on your preference */
+	background-clip: text; /*it defines how far the background should extend within an element, here we set it to text */
+	-webkit-background-clip: text; /*for browsers compatibility */
+	-webkit-text-fill-color: transparent; /* specifies the fill color of text characters. We use transparent to use the background as our text fill  */
+	animation: wave 2000ms ease alternate infinite;
+	transition: all 0.4s ease;
+	border: 2px solid blue;
+	text-align: center;
+  }
+  @keyframes wave {
+	0% {
+	  background-position: 0 0;
+	}
+	100% {
+	  background-position: 50vw 10px;
+	}
+  }
+  #likeButton {
+	width: 500px;
+	height: 200px;
+	background-image: url('https://i.pinimg.com/originals/85/43/c7/8543c762471520869d07847c9665858d.gif');
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border: none;
+	background-position: center;
+	background-color: transparent;
+	cursor: pointer;
+  }
+  p {
+	font-size: 18px;
+	line-height: 1.5;
+	color: #333;
+	text-align: justify;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+
+  }
+  
+  p:first-of-type {
+	font-weight: bold;
+  }
+  
+
+  ul {
+	display: inline-block;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	vertical-align: middle;
+  }
+  
+  li {
+	display: inline-block;
+  }
+  
+  li a {
+	display: block;
+	color: white;
+	padding: 8px;
+  }
+  
+  #Logo {
+	
+	float: left;
+  	display: inline-block; /* Add text-align to align the image to the left */
+  }
+  
+  #logo img {
+	max-width: 50px;
+	order: -1;
+	margin-right: auto;
+  	max-height: 40px;
+  }
+  
